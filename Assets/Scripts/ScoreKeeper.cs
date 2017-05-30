@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Score : MonoBehaviour {
+public class ScoreKeeper : MonoBehaviour
+{
+    public float CurrentScore;
+    public float MaxScore;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+
+    void UpdateScore()
+    {
+        CurrentScore++;
+        if (CurrentScore >= MaxScore)
+        {
+            
+        }
+    }    
 }
