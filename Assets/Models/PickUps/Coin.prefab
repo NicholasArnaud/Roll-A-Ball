@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4564199218368816}
   - component: {fileID: 33657894446910160}
-  - component: {fileID: 136456883372785892}
   - component: {fileID: 23117067306504458}
   m_Layer: 0
   m_Name: Cylinder
@@ -37,6 +36,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4960056654507374}
+  - component: {fileID: 114717667438580120}
+  - component: {fileID: 136081673772354532}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -51,7 +52,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1125465170444840}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 4960056654507374}
@@ -64,7 +65,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1987773297529690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.24942061, y: 0.5, z: -1.2999549}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4564199218368816}
@@ -110,16 +111,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1125465170444840}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!136 &136456883372785892
+--- !u!114 &114717667438580120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1987773297529690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69aa1f711902fdb4b9b312d4d326df5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XRotationSpeed: 0
+  YRotationSpeed: 0
+  ZRotationSpeed: 0
+--- !u!136 &136081673772354532
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1125465170444840}
+  m_GameObject: {fileID: 1987773297529690}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}

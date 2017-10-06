@@ -166,10 +166,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4564199218368816, guid: 56f0cbe2e08148645b748df0b19c3217, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56f0cbe2e08148645b748df0b19c3217, type: 2}
   m_IsPrefabParent: 0
@@ -186,12 +182,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 861735919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69aa1f711902fdb4b9b312d4d326df5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4568a0626739f6347b852ac32c85f12c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  XRotationSpeed: 0
-  YRotationSpeed: 0
-  ZRotationSpeed: 0
+  DestroyDelay: 5
 --- !u!1001 &1030530799
 Prefab:
   m_ObjectHideFlags: 0
@@ -230,6 +224,10 @@ Prefab:
     - target: {fileID: 4361674467595718, guid: f9c50df27f9e00349948811f080cc088, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887683723810460, guid: f9c50df27f9e00349948811f080cc088, type: 2}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9c50df27f9e00349948811f080cc088, type: 2}
