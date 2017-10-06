@@ -71,8 +71,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4361674467595718}
   - component: {fileID: 114335233185805500}
-  - component: {fileID: 54018895215642088}
   - component: {fileID: 136828187192639640}
+  - component: {fileID: 54591730233542138}
   m_Layer: 0
   m_Name: Boxy
   m_TagString: Untagged
@@ -252,7 +252,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1311084860696464}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54018895215642088
+--- !u!54 &54591730233542138
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
