@@ -10,6 +10,9 @@ public class ThirdPersonMovement : MonoBehaviour
     public float MovementSpeed;
     public Rigidbody RB;
 
+    /// <summary>
+    /// DO NOT MODIFY
+    /// </summary>
     void Start()
     {
         //If failed to assign values in the inspector this will assign some values to them
@@ -25,9 +28,9 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         float rotation = Input.GetAxis("Horizontal") * RotateSpeed;
         float movement = Input.GetAxis("Vertical") * MovementSpeed;
-
-        Debug.Log(new Vector3(0, rotation, 0));
-        transform.Rotate(new Vector3(0, rotation, 0));
+        
+        transform.Rotate(new Vector3(0, rotation, 0), RotateSpeed);
+        
         RB.AddForce(transform.forward * movement);
     }
 }
