@@ -13,15 +13,12 @@ public class Spinner : MonoBehaviour
     [Tooltip("Speed at which the object rotates on Z Axis")]
     [Range(-20, 20)]
     public float ZRotationSpeed;
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
+    
 	// Update is called once per frame
 	void Update ()
     {
-        transform.Rotate(new Vector3(XRotationSpeed, YRotationSpeed, ZRotationSpeed));		        
+        //Rotates the object on each axis each frames based on the values of rotation
+        //speeds for each axis set in the inspector
+        transform.Rotate(new Vector3(XRotationSpeed, YRotationSpeed, ZRotationSpeed));
     }
 }
