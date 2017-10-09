@@ -70,7 +70,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4361674467595718}
-  - component: {fileID: 114335233185805500}
   - component: {fileID: 136828187192639640}
   - component: {fileID: 54591730233542138}
   m_Layer: 0
@@ -267,20 +266,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
---- !u!114 &114335233185805500
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1887683723810460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bfa005ae16b0b944ad112e60ace2422, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RotateSpeed: 0
-  MovementSpeed: 3.79
-  RB: {fileID: 0}
 --- !u!136 &136828187192639640
 CapsuleCollider:
   m_ObjectHideFlags: 1
