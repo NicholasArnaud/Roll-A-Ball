@@ -14,8 +14,8 @@ public class ScoreKeeper : MonoBehaviour
     /// The last two variables will be of type Text and will store a refrence
     /// to the ScoreDisplay UI element and the GameOverDisplay UI element
     /// </summary>
-    public float CurrentScore;
-    public float MaxScore;
+    private float CurrentScore;
+    private float MaxScore;
 
     public Text ScoreDisplay;
     public Text GameOverDisplay;
@@ -28,11 +28,9 @@ public class ScoreKeeper : MonoBehaviour
         //Ensure the current score is 0 at the start
         CurrentScore = 0;
         //Set the value of MaxScore by finding all of the PickUp objects in the scene
-        MaxScore = GameObject.FindGameObjectsWithTag("PickUp").Length;
+        MaxScore = GameObject.FindObjectsOfType<PickupBehaviour>().Length;
         //Set the value of the ScoreDisplay text to the value of Current score
-        ScoreDisplay.text = CurrentScore.ToString();
-        //Disable GameOverDisplay
-        GameOverDisplay.enabled = false;
+        ScoreDisplay.text = CurrentScore.ToString();                
     }
 
     /// <summary>
@@ -45,10 +43,10 @@ public class ScoreKeeper : MonoBehaviour
         //Update the ScoreDisplay
         ScoreDisplay.text = CurrentScore.ToString();
         //If current score is greater than of equal to the MaxScore
-        if (CurrentScore >= MaxScore)
+        if (CurrentScore == MaxScore)
         {
             //turn on the GameOverDisplay
-            GameOverDisplay.enabled = true;
+            GameOverDisplay.text = "Game Over";
         }
     }    
 }
