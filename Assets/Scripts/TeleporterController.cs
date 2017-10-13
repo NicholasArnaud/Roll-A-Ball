@@ -40,29 +40,20 @@ public class TeleporterController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    public void Update()
-    {
-
-    }
-
-
-    public GameObject GetLink(GameObject teleporter)
+    public GameObject GetLink(Teleporter teleporter)
     {
         foreach (var a in teleporters)
         {
-            Debug.Log("active key" + teleporter.GetComponent<Teleporter>().Key + "otehr key" + a.GetComponent<Teleporter>().Key);
-            if (teleporter.GetComponent<Teleporter>().Key == a.GetComponent<Teleporter>().Key)
+            Debug.Log("active key " + teleporter.Key + " other key " + a.GetComponent<Teleporter>().Key);
+            if (teleporter.Key == a.GetComponent<Teleporter>().Key)
             {
                 Debug.Log(a.name + " " + teleporter.name);
                 if (teleporter.gameObject != a.gameObject)
                 {
-
                     return a.gameObject;
                 }
             }
         }
         return null;
     }
-
 }
